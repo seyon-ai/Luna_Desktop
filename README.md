@@ -168,6 +168,12 @@ python scripts/build_windows.py
 Or let GitHub Actions do it: pushes to `main`/`arena/**` run tests and build;
 tagged releases (`v*`) upload a portable zip with `LUNA.exe`.
 
+> The workflow is maintained at `build/github-actions/ci.yml` (reference copy)
+> and `.github/workflows/ci.yml` (active copy). If your token cannot push
+> files under `.github/workflows/` (GitHub App scope), activate it by copying
+> the reference file into `.github/workflows/ci.yml` with an account/token
+> that has the `workflows` scope — the pipeline itself is ready as-is.
+
 ## Repository layout
 
 ```text
