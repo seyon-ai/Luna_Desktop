@@ -1,0 +1,53 @@
+# LUNA user data / secrets (never commit)
+luna_home/
+.luna/
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build artifacts (build/luna.spec + build/hooks are tracked source)
+/dist/
+/build/LUNA/
+/build/*.egg-info/
+*.spec.bak
+*.exe
+*.msi
+*.zip
+
+# Model / voice binaries — these are imported by the user through LUNA
+*.onnx
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+!tests/fixtures/*.bin
+
+# Browser profile / runtime caches
+.cache/
+cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
